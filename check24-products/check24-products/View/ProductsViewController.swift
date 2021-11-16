@@ -40,11 +40,15 @@ class ProductsViewController: UIViewController{
 extension ProductsViewController: ProductsViewProtocol {
     func displayProductsList(with products: [Product]) {
         self.products = products
-        self.productsTableView.reloadData()
+        DispatchQueue.main.async {
+            self.productsTableView.reloadData()
+        }
     }
     
     func displayErrorMessage(with errorMessage: String) {
-        
+        DispatchQueue.main.async {
+//            TODO:- add UI for error
+        }
     }
 }
 
@@ -61,6 +65,8 @@ extension ProductsViewController :  UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCellTableViewCell", for: indexPath) as! ProductCellTableViewCell
+        guard let product = self.products?[indexPath.row]  else { return UITableViewCell()}
+        cell.prepareProductCell(with: product)
         return cell
     }
     

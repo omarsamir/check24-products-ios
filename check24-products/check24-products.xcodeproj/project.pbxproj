@@ -21,6 +21,7 @@
 		0716685C2743B65400A55CA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716685B2743B65400A55CA5 /* Constants.swift */; };
 		0716686B2743C64D00A55CA5 /* ProductCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071668692743C64D00A55CA5 /* ProductCellTableViewCell.swift */; };
 		0716686C2743C64D00A55CA5 /* ProductCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0716686A2743C64D00A55CA5 /* ProductCellTableViewCell.xib */; };
+		0716687C2743D32900A55CA5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716687B2743D32900A55CA5 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		0716685B2743B65400A55CA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		071668692743C64D00A55CA5 /* ProductCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellTableViewCell.swift; sourceTree = "<group>"; };
 		0716686A2743C64D00A55CA5 /* ProductCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellTableViewCell.xib; sourceTree = "<group>"; };
+		0716687B2743D32900A55CA5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				0716685B2743B65400A55CA5 /* Constants.swift */,
+				0716687B2743D32900A55CA5 /* Utils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			files = (
 				071668502743B26000A55CA5 /* ProdcutsPresenter.swift in Sources */,
 				071668102743AFED00A55CA5 /* ProductsViewController.swift in Sources */,
+				0716687C2743D32900A55CA5 /* Utils.swift in Sources */,
 				0716684B2743B1F900A55CA5 /* ProductsModel.swift in Sources */,
 				0716680C2743AFED00A55CA5 /* AppDelegate.swift in Sources */,
 				0716685C2743B65400A55CA5 /* Constants.swift in Sources */,
