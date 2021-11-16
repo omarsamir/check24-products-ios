@@ -17,10 +17,16 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var shortDescriptionLabel: UILabel!
     @IBOutlet weak var longDescriptionLabel: UILabel!
     @IBOutlet weak var contentView: UIView!
+    var presenter: ProductDetailsPresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = ProductDetailsPresenter(view: self)
     }
-    
+}
+
+
+extension ProductDetailsViewController: ProductDetailsViewProtocol {
     func setupUI(product: Product, image: UIImage?){
         imageView.image = image
         titleLabel.text = product.name

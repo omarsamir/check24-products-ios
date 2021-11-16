@@ -23,6 +23,7 @@
 		0716686C2743C64D00A55CA5 /* ProductCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0716686A2743C64D00A55CA5 /* ProductCellTableViewCell.xib */; };
 		0716687C2743D32900A55CA5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716687B2743D32900A55CA5 /* Utils.swift */; };
 		071668812743E06600A55CA5 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071668802743E06600A55CA5 /* ProductDetailsViewController.swift */; };
+		071668862743F23000A55CA5 /* ProductDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071668852743F23000A55CA5 /* ProductDetailsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		0716686A2743C64D00A55CA5 /* ProductCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellTableViewCell.xib; sourceTree = "<group>"; };
 		0716687B2743D32900A55CA5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		071668802743E06600A55CA5 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		071668852743F23000A55CA5 /* ProductDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				0716684F2743B26000A55CA5 /* ProdcutsPresenter.swift */,
+				071668852743F23000A55CA5 /* ProductDetailsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				071668812743E06600A55CA5 /* ProductDetailsViewController.swift in Sources */,
 				0716684B2743B1F900A55CA5 /* ProductsModel.swift in Sources */,
 				0716680C2743AFED00A55CA5 /* AppDelegate.swift in Sources */,
+				071668862743F23000A55CA5 /* ProductDetailsPresenter.swift in Sources */,
 				0716685C2743B65400A55CA5 /* Constants.swift in Sources */,
 				0716686B2743C64D00A55CA5 /* ProductCellTableViewCell.swift in Sources */,
 				0716680E2743AFED00A55CA5 /* SceneDelegate.swift in Sources */,

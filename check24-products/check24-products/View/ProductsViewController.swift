@@ -71,7 +71,7 @@ extension ProductsViewController :  UITableViewDelegate {
         let detailsViewController: ProductDetailsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController
         self.present(detailsViewController, animated: false, completion: nil)
         let prod = self.filteredProducts[indexPath.row]
-        detailsViewController.setupUI(product: prod, image: cell.getImage(availability: prod.available ?? false))
+        detailsViewController.presenter?.presentProductDetails(product: prod, image: cell.getImage(availability: prod.available ?? false))
     }
 }
 
