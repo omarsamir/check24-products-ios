@@ -8,7 +8,7 @@
 import Foundation
 
 class APIClient {
-    // URLSession data task method from this link https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift
+    // URLSession data task method syntax from this link https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift
     
     static func fetchRequest(with path: String,
                              httpMethod: String? = "GET",

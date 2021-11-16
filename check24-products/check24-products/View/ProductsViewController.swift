@@ -38,9 +38,11 @@ class ProductsViewController: UIViewController{
 
 
 extension ProductsViewController: ProductsViewProtocol {
-    func displayProductsList(with products: [Product]) {
-        self.products = products
+    func displayProducts(with products: ProductsModel) {
+        self.products = products.products
         DispatchQueue.main.async {
+            self.titleLabel.text = products.header?.headerTitle
+            self.descriptionLabel.text = products.header?.headerDescription
             self.productsTableView.reloadData()
         }
     }

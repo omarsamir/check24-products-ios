@@ -7,7 +7,7 @@
 
 import Foundation
 protocol ProductsViewProtocol: class {
-    func displayProductsList(with products: [Product])
+    func displayProducts(with products: ProductsModel)
     func displayErrorMessage(with errorMessage: String)
 }
 class ProdcutsPresenter {
@@ -20,11 +20,11 @@ class ProdcutsPresenter {
         APIClient.fetchRequest(with: Constants.listProductsServicePath) { [weak self](data, error) in
             do {
                 let productsObj = try JSONDecoder().decode(ProductsModel.self, from: data!)
-                guard let products = productsObj.products else {
+                guard productsObj.products != nil else {
                     self?.handleError( NSError(domain: Constants.emptyDataErrorDomain, code: Constants.emptyDataErrorCode, userInfo: nil))
                     return
                 }
-                self?.view?.displayProductsList(with: products)
+                self?.view?.displayProducts(with: productsObj)
             } catch let error{
                 self?.handleError(error as NSError)
             }
