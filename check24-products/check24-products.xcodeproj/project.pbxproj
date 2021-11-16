@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0716680C2743AFED00A55CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716680B2743AFED00A55CA5 /* AppDelegate.swift */; };
+		0716680E2743AFED00A55CA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716680D2743AFED00A55CA5 /* SceneDelegate.swift */; };
+		071668102743AFED00A55CA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716680F2743AFED00A55CA5 /* ViewController.swift */; };
+		071668132743AFED00A55CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071668112743AFED00A55CA5 /* Main.storyboard */; };
+		071668152743AFEE00A55CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071668142743AFEE00A55CA5 /* Assets.xcassets */; };
+		071668182743AFEE00A55CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071668162743AFEE00A55CA5 /* LaunchScreen.storyboard */; };
+		071668232743AFEE00A55CA5 /* check24_productsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071668222743AFEE00A55CA5 /* check24_productsTests.swift */; };
+		0716682E2743AFEE00A55CA5 /* check24_productsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716682D2743AFEE00A55CA5 /* check24_productsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0716681F2743AFEE00A55CA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071668002743AFED00A55CA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071668072743AFED00A55CA5;
+			remoteInfo = "check24-products";
+		};
+		0716682A2743AFEE00A55CA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071668002743AFED00A55CA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071668072743AFED00A55CA5;
+			remoteInfo = "check24-products";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		071668082743AFED00A55CA5 /* check24-products.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "check24-products.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0716680B2743AFED00A55CA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0716680D2743AFED00A55CA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0716680F2743AFED00A55CA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		071668122743AFED00A55CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		071668142743AFEE00A55CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		071668172743AFEE00A55CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		071668192743AFEE00A55CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0716681E2743AFEE00A55CA5 /* check24-productsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "check24-productsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071668222743AFEE00A55CA5 /* check24_productsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = check24_productsTests.swift; sourceTree = "<group>"; };
+		071668242743AFEE00A55CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071668292743AFEE00A55CA5 /* check24-productsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "check24-productsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0716682D2743AFEE00A55CA5 /* check24_productsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = check24_productsUITests.swift; sourceTree = "<group>"; };
+		0716682F2743AFEE00A55CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		071668052743AFED00A55CA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0716681B2743AFEE00A55CA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071668262743AFEE00A55CA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071667FF2743AFED00A55CA5 = {
+			isa = PBXGroup;
+			children = (
+				0716680A2743AFED00A55CA5 /* check24-products */,
+				071668212743AFEE00A55CA5 /* check24-productsTests */,
+				0716682C2743AFEE00A55CA5 /* check24-productsUITests */,
+				071668092743AFED00A55CA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		071668092743AFED00A55CA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				071668082743AFED00A55CA5 /* check24-products.app */,
+				0716681E2743AFEE00A55CA5 /* check24-productsTests.xctest */,
+				071668292743AFEE00A55CA5 /* check24-productsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0716680A2743AFED00A55CA5 /* check24-products */ = {
+			isa = PBXGroup;
+			children = (
+				0716680B2743AFED00A55CA5 /* AppDelegate.swift */,
+				0716680D2743AFED00A55CA5 /* SceneDelegate.swift */,
+				0716680F2743AFED00A55CA5 /* ViewController.swift */,
+				071668112743AFED00A55CA5 /* Main.storyboard */,
+				071668142743AFEE00A55CA5 /* Assets.xcassets */,
+				071668162743AFEE00A55CA5 /* LaunchScreen.storyboard */,
+				071668192743AFEE00A55CA5 /* Info.plist */,
+			);
+			path = "check24-products";
+			sourceTree = "<group>";
+		};
+		071668212743AFEE00A55CA5 /* check24-productsTests */ = {
+			isa = PBXGroup;
+			children = (
+				071668222743AFEE00A55CA5 /* check24_productsTests.swift */,
+				071668242743AFEE00A55CA5 /* Info.plist */,
+			);
+			path = "check24-productsTests";
+			sourceTree = "<group>";
+		};
+		0716682C2743AFEE00A55CA5 /* check24-productsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0716682D2743AFEE00A55CA5 /* check24_productsUITests.swift */,
+				0716682F2743AFEE00A55CA5 /* Info.plist */,
+			);
+			path = "check24-productsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		071668072743AFED00A55CA5 /* check24-products */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071668322743AFEE00A55CA5 /* Build configuration list for PBXNativeTarget "check24-products" */;
+			buildPhases = (
+				071668042743AFED00A55CA5 /* Sources */,
+				071668052743AFED00A55CA5 /* Frameworks */,
+				071668062743AFED00A55CA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "check24-products";
+			productName = "check24-products";
+			productReference = 071668082743AFED00A55CA5 /* check24-products.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0716681D2743AFEE00A55CA5 /* check24-productsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071668352743AFEE00A55CA5 /* Build configuration list for PBXNativeTarget "check24-productsTests" */;
+			buildPhases = (
+				0716681A2743AFEE00A55CA5 /* Sources */,
+				0716681B2743AFEE00A55CA5 /* Frameworks */,
+				0716681C2743AFEE00A55CA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071668202743AFEE00A55CA5 /* PBXTargetDependency */,
+			);
+			name = "check24-productsTests";
+			productName = "check24-productsTests";
+			productReference = 0716681E2743AFEE00A55CA5 /* check24-productsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		071668282743AFEE00A55CA5 /* check24-productsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071668382743AFEE00A55CA5 /* Build configuration list for PBXNativeTarget "check24-productsUITests" */;
+			buildPhases = (
+				071668252743AFEE00A55CA5 /* Sources */,
+				071668262743AFEE00A55CA5 /* Frameworks */,
+				071668272743AFEE00A55CA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0716682B2743AFEE00A55CA5 /* PBXTargetDependency */,
+			);
+			name = "check24-productsUITests";
+			productName = "check24-productsUITests";
+			productReference = 071668292743AFEE00A55CA5 /* check24-productsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		071668002743AFED00A55CA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					071668072743AFED00A55CA5 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					0716681D2743AFEE00A55CA5 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 071668072743AFED00A55CA5;
+					};
+					071668282743AFEE00A55CA5 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 071668072743AFED00A55CA5;
+					};
+				};
+			};
+			buildConfigurationList = 071668032743AFED00A55CA5 /* Build configuration list for PBXProject "check24-products" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 071667FF2743AFED00A55CA5;
+			productRefGroup = 071668092743AFED00A55CA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				071668072743AFED00A55CA5 /* check24-products */,
+				0716681D2743AFEE00A55CA5 /* check24-productsTests */,
+				071668282743AFEE00A55CA5 /* check24-productsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		071668062743AFED00A55CA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071668182743AFEE00A55CA5 /* LaunchScreen.storyboard in Resources */,
+				071668152743AFEE00A55CA5 /* Assets.xcassets in Resources */,
+				071668132743AFED00A55CA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0716681C2743AFEE00A55CA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071668272743AFEE00A55CA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		071668042743AFED00A55CA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071668102743AFED00A55CA5 /* ViewController.swift in Sources */,
+				0716680C2743AFED00A55CA5 /* AppDelegate.swift in Sources */,
+				0716680E2743AFED00A55CA5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0716681A2743AFEE00A55CA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071668232743AFEE00A55CA5 /* check24_productsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071668252743AFEE00A55CA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0716682E2743AFEE00A55CA5 /* check24_productsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		071668202743AFEE00A55CA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071668072743AFED00A55CA5 /* check24-products */;
+			targetProxy = 0716681F2743AFEE00A55CA5 /* PBXContainerItemProxy */;
+		};
+		0716682B2743AFEE00A55CA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071668072743AFED00A55CA5 /* check24-products */;
+			targetProxy = 0716682A2743AFEE00A55CA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		071668112743AFED00A55CA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071668122743AFED00A55CA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		071668162743AFEE00A55CA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071668172743AFEE00A55CA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		071668302743AFEE00A55CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		071668312743AFEE00A55CA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		071668332743AFEE00A55CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UTZ3WLCD9K;
+				INFOPLIST_FILE = "check24-products/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.check24-products";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		071668342743AFEE00A55CA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UTZ3WLCD9K;
+				INFOPLIST_FILE = "check24-products/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.check24-products";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		071668362743AFEE00A55CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UTZ3WLCD9K;
+				INFOPLIST_FILE = "check24-productsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.check24-productsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/check24-products.app/check24-products";
+			};
+			name = Debug;
+		};
+		071668372743AFEE00A55CA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UTZ3WLCD9K;
+				INFOPLIST_FILE = "check24-productsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.check24-productsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/check24-products.app/check24-products";
+			};
+			name = Release;
+		};
+		071668392743AFEE00A55CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UTZ3WLCD9K;
+				INFOPLIST_FILE = "check24-productsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.check24-productsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "check24-products";
+			};
+			name = Debug;
+		};
+		0716683A2743AFEE00A55CA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UTZ3WLCD9K;
+				INFOPLIST_FILE = "check24-productsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.check24-productsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "check24-products";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		071668032743AFED00A55CA5 /* Build configuration list for PBXProject "check24-products" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071668302743AFEE00A55CA5 /* Debug */,
+				071668312743AFEE00A55CA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071668322743AFEE00A55CA5 /* Build configuration list for PBXNativeTarget "check24-products" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071668332743AFEE00A55CA5 /* Debug */,
+				071668342743AFEE00A55CA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071668352743AFEE00A55CA5 /* Build configuration list for PBXNativeTarget "check24-productsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071668362743AFEE00A55CA5 /* Debug */,
+				071668372743AFEE00A55CA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071668382743AFEE00A55CA5 /* Build configuration list for PBXNativeTarget "check24-productsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071668392743AFEE00A55CA5 /* Debug */,
+				0716683A2743AFEE00A55CA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 071668002743AFED00A55CA5 /* Project object */;
+}
