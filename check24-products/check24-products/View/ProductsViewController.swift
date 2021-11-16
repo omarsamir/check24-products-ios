@@ -19,10 +19,8 @@ class ProductsViewController: UIViewController{
         presenter = ProdcutsPresenter(view: self)
         productsTableView.delegate = self
         productsTableView.dataSource = self
-//        presenter?.fetchProducts()
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isTranslucent = false
+        productsTableView.register(UINib(nibName: "ProductCellTableViewCell", bundle: nil), forCellReuseIdentifier: "ProductCellTableViewCell")
+        presenter?.fetchProducts()
     }
     
     
@@ -42,6 +40,7 @@ class ProductsViewController: UIViewController{
 extension ProductsViewController: ProductsViewProtocol {
     func displayProductsList(with products: [Product]) {
         self.products = products
+        self.productsTableView.reloadData()
     }
     
     func displayErrorMessage(with errorMessage: String) {
@@ -61,7 +60,8 @@ extension ProductsViewController :  UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCellTableViewCell", for: indexPath) as! ProductCellTableViewCell
+        return cell
     }
     
     
