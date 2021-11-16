@@ -12,7 +12,7 @@ protocol ProductsViewProtocol: class {
     func displayErrorMessage(with errorMessage: String)
 }
 class ProdcutsPresenter {
-    private var view: ProductsViewProtocol?
+    private weak var view: ProductsViewProtocol?
     init(view: ProductsViewProtocol) {
         self.view = view
     }
@@ -52,5 +52,11 @@ class ProdcutsPresenter {
             filteredList = products.filter({$0.isFav == true})
         }
         self.view?.displayProducts(with: filteredList, from: true)
+    }
+}
+
+extension ProdcutsPresenter: ProductsPresenterProtocol {
+    func updateFavorite(productID: Int) {
+        
     }
 }

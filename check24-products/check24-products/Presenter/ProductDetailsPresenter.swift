@@ -11,14 +11,22 @@ protocol ProductDetailsViewProtocol: class {
     func setupUI(product: Product, image: UIImage?)
 }
 
+protocol ProductsPresenterProtocol: class {
+    func updateFavorite(productID: Int)
+}
+
 class ProductDetailsPresenter {
-    private var view: ProductDetailsViewProtocol?
-    
+    private weak var view: ProductDetailsViewProtocol?
+    weak var productsPresenterDelegate: ProductsPresenterProtocol?
     init(view: ProductDetailsViewProtocol) {
         self.view = view
     }
     
     func presentProductDetails(product: ProductDetailsRichModel){
         self.view?.setupUI(product: product.product!, image: product.image)
+    }
+    
+    func favorite(productID: Int){
+        self.productsPresenterDelegate?.updateFavorite(productID: productID)
     }
 }

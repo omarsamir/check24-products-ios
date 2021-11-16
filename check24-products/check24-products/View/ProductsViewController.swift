@@ -71,6 +71,7 @@ extension ProductsViewController :  UITableViewDelegate {
         let cell: ProductCellTableViewCell = tableView.cellForRow(at: indexPath) as! ProductCellTableViewCell
         let detailsViewController: ProductDetailsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController
         detailsViewController.product = ProductDetailsRichModel(product: prod,image: cell.getImage(availability: prod.available ?? false))
+        detailsViewController.presenter?.productsPresenterDelegate = self.presenter
         self.present(detailsViewController, animated: false, completion: nil)
     }
 }

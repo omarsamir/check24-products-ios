@@ -18,7 +18,7 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var longDescriptionLabel: UILabel!
     @IBOutlet weak var contentView: UIView!
     var product: ProductDetailsRichModel?
-    private var presenter: ProductDetailsPresenter?
+    var presenter: ProductDetailsPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
