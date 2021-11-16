@@ -18,7 +18,7 @@ class ProductDetailsPresenter {
         self.view = view
     }
     
-    func presentProductDetails(product: Product, image: UIImage?){
-        self.view?.setupUI(product: product, image: image)
+    func presentProductDetails(product: ProductDetailsRichModel){
+        self.view?.setupUI(product: product.product!, image: product.image)
     }
 }

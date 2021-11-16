@@ -154,6 +154,9 @@
                                                 <state key="normal" title="Favorite">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="didPressFavourite:" destination="YxU-HA-jeJ" eventType="touchUpInside" id="EFi-Me-657"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrx-5D-RF6">
                                                 <rect key="frame" x="20" y="276" width="374" height="16"/>

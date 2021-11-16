@@ -17,11 +17,16 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var shortDescriptionLabel: UILabel!
     @IBOutlet weak var longDescriptionLabel: UILabel!
     @IBOutlet weak var contentView: UIView!
-    var presenter: ProductDetailsPresenter?
+    var product: ProductDetailsRichModel?
+    private var presenter: ProductDetailsPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = ProductDetailsPresenter(view: self)
+        presenter?.presentProductDetails(product: product!)
+    }
+    @IBAction func didPressFavourite(_ sender: Any) {
+        
     }
 }
 

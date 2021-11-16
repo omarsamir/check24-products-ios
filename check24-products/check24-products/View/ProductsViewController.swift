@@ -67,11 +67,11 @@ extension ProductsViewController: ProductsViewProtocol {
 
 extension ProductsViewController :  UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let prod = self.filteredProducts[indexPath.row]
         let cell: ProductCellTableViewCell = tableView.cellForRow(at: indexPath) as! ProductCellTableViewCell
         let detailsViewController: ProductDetailsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController
+        detailsViewController.product = ProductDetailsRichModel(product: prod,image: cell.getImage(availability: prod.available ?? false))
         self.present(detailsViewController, animated: false, completion: nil)
-        let prod = self.filteredProducts[indexPath.row]
-        detailsViewController.presenter?.presentProductDetails(product: prod, image: cell.getImage(availability: prod.available ?? false))
     }
 }
 

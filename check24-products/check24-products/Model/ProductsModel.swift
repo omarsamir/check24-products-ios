@@ -5,7 +5,7 @@
 //  Created by omar on 16/11/2021.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - ProductsModel
 struct ProductsModel: Codable {
@@ -77,5 +77,10 @@ struct Filter {
     let all: Bool
     let favorite: Bool
     let available: Bool
+}
+
+struct ProductDetailsRichModel {
+    let product: Product?
+    let image: UIImage?
 }
 
