@@ -22,7 +22,7 @@ extension ProductsViewController: ProductsViewProtocol {
         
     }
     
-    func displayError(with errror: Error) {
+    func displayErrorMessage(with errorMessage: String) {
         
     }
 }

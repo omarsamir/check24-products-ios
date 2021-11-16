@@ -21,11 +21,16 @@ class APIClient {
             request.httpBody = httpBody
         }
         let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
-            guard let data = data else {
-                completion(nil,error)
+            guard let error = error else {
+                guard let data = data else {
+                    completion(nil, NSError(domain:Constants.emptyDataErrorDomain, code: Constants.emptyDataErrorCode, userInfo:nil))
+                    return
+                }
+                completion(data,nil)
                 return
             }
-            completion(data,error)
+            completion(nil,error)
+           
         }
         task.resume()
     }

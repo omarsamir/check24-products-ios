@@ -8,7 +8,7 @@
 import Foundation
 protocol ProductsViewProtocol: class {
     func displayProductsList(with products: [Product])
-    func displayError(with errror: Error)
+    func displayErrorMessage(with errorMessage: String)
 }
 class ProdcutsPresenter {
     private var view: ProductsViewProtocol?
@@ -17,10 +17,28 @@ class ProdcutsPresenter {
     }
     
     func fetchProducts(){
-        APIClient.fetchRequest(with: Constants.LIST_PRODUCTS_SERVICE_PATH) { (data, error) in
-            guard let data = data else { return }
-            let productsObj = try? JSONDecoder().decode(ProductsModel.self, from: data)
-            print(productsObj)
+        APIClient.fetchRequest(with: Constants.listProductsServicePath) { (data, error) in
+            do {
+                let productsObj = try JSONDecoder().decode(ProductsModel.self, from: data!)
+                guard let products = productsObj.products else {
+                    self.handleError( NSError(domain: Constants.emptyDataErrorDomain, code: Constants.emptyDataErrorCode, userInfo: nil))
+                    return
+                }
+                self.view?.displayProductsList(with: products)
+            } catch let error{
+                self.handleError(error as NSError)
+            }
+           
+        }
+    }
+    
+    private func handleError(_ error: NSError){
+        if error.domain == Constants.emptyDataErrorDomain {
+            self.view?.displayErrorMessage(with: Constants.emptyDataErrorMessage)
+        } else if error.domain == Constants.parsingDataErrorDomain {
+            self.view?.displayErrorMessage(with: Constants.parsingDataErrorMessage)
+        } else {
+            self.view?.displayErrorMessage(with: error.localizedDescription)
         }
     }
 }
