@@ -13,7 +13,8 @@ class ProductsViewController: UIViewController{
     @IBOutlet weak var productsTableView: UITableView!
     
     private var presenter: ProdcutsPresenter?
-    private var products: [Product]?
+    private var products = [Product]()
+    private var filteredProducts = [Product]()
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = ProdcutsPresenter(view: self)
@@ -27,29 +28,39 @@ class ProductsViewController: UIViewController{
     //MARK:- Filters
     
     @IBAction func didAllFilterPressed(_ sender: Any) {
+        presenter?.filterProducts(products: self.products, by: Filter(all: true, favorite: false, available: false))
     }
     
     @IBAction func didAvailableFilterPressed(_ sender: Any) {
+        presenter?.filterProducts(products: self.products, by: Filter(all: false, favorite: false, available: true))
     }
     
     @IBAction func didFavoriteFilterPressed(_ sender: Any) {
+        presenter?.filterProducts(products: self.products, by: Filter(all: false, favorite: true, available: false))
     }
 }
 
 
 extension ProductsViewController: ProductsViewProtocol {
-    func displayProducts(with products: ProductsModel) {
-        self.products = products.products
+    func displayProducts(with products: [Product], from filter: Bool) {
+        if !filter {
+            self.products = products
+        }
+        self.filteredProducts = products
         DispatchQueue.main.async {
-            self.titleLabel.text = products.header?.headerTitle
-            self.descriptionLabel.text = products.header?.headerDescription
             self.productsTableView.reloadData()
         }
     }
     
+    func displayTitle(with title: String, subTitle: String) {
+        DispatchQueue.main.async {
+            self.titleLabel.text = title
+            self.descriptionLabel.text = subTitle
+        }
+    }
     func displayErrorMessage(with errorMessage: String) {
         DispatchQueue.main.async {
-//            TODO:- add UI for error
+            //            TODO:- add UI for error
         }
     }
 }
@@ -62,13 +73,15 @@ extension ProductsViewController :  UITableViewDelegate {
 
 extension ProductsViewController :  UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.products?.count ?? 0
+        return self.filteredProducts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCellTableViewCell", for: indexPath) as! ProductCellTableViewCell
-        guard let product = self.products?[indexPath.row]  else { return UITableViewCell()}
-        cell.prepareProductCell(with: product)
+        cell.prepareProductCell(with: self.filteredProducts[indexPath.row])
+        if indexPath.row == self.filteredProducts.count - 1 {
+            self.filteredProducts = self.products
+        }
         return cell
     }
     

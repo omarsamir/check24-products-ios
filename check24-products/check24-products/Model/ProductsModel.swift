@@ -32,9 +32,10 @@ struct Product: Codable {
     let productDescription, longDescription: String?
     let rating: Double?
     let price: Price?
+    let isFav: Bool?
 
     enum CodingKeys: String, CodingKey {
-        case name, type, id, color, imageURL, colorCode, available, releaseDate
+        case name, type, id, color, imageURL, colorCode, available, releaseDate, isFav
         case productDescription = "description"
         case longDescription, rating, price
     }
@@ -70,3 +71,10 @@ enum TypeEnum: String, Codable {
     case square = "Square"
     case triangle = "Triangle"
 }
+
+struct Filter {
+    let all: Bool
+    let favorite: Bool
+    let available: Bool
+}
+
