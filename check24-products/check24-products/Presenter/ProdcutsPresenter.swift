@@ -57,6 +57,6 @@ class ProdcutsPresenter {
 
 extension ProdcutsPresenter: ProductsPresenterProtocol {
     func updateFavorite(productID: Int) {
-        
+        print("")
     }
 }

@@ -26,7 +26,7 @@ class ProductDetailsViewController: UIViewController {
         presenter?.presentProductDetails(product: product!)
     }
     @IBAction func didPressFavourite(_ sender: Any) {
-        
+        presenter?.favorite(productID: product?.product?.id ?? 0)
     }
 }
 
