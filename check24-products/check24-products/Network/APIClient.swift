@@ -10,9 +10,9 @@ import Foundation
 class APIClient {
     
     static func fetchRequest(with path: String,
-                        httpMethod: String? = "GET",
-                        body: Dictionary<String, Any>? = nil,
-                        completion:@escaping (Data?,Error?) -> ()) {
+                             httpMethod: String? = "GET",
+                             body: Dictionary<String, Any>? = nil,
+                             completion:@escaping (Data?,Error?) -> ()) {
         guard let serviceUrl = URL(string: path) else { return }
         var request = URLRequest(url: serviceUrl)
         request.httpMethod = httpMethod
@@ -30,7 +30,7 @@ class APIClient {
                 return
             }
             completion(nil,error)
-           
+            
         }
         task.resume()
     }

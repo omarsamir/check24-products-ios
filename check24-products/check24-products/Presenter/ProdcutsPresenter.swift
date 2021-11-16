@@ -17,18 +17,17 @@ class ProdcutsPresenter {
     }
     
     func fetchProducts(){
-        APIClient.fetchRequest(with: Constants.listProductsServicePath) { (data, error) in
+        APIClient.fetchRequest(with: Constants.listProductsServicePath) { [weak self](data, error) in
             do {
                 let productsObj = try JSONDecoder().decode(ProductsModel.self, from: data!)
                 guard let products = productsObj.products else {
-                    self.handleError( NSError(domain: Constants.emptyDataErrorDomain, code: Constants.emptyDataErrorCode, userInfo: nil))
+                    self?.handleError( NSError(domain: Constants.emptyDataErrorDomain, code: Constants.emptyDataErrorCode, userInfo: nil))
                     return
                 }
-                self.view?.displayProductsList(with: products)
+                self?.view?.displayProductsList(with: products)
             } catch let error{
-                self.handleError(error as NSError)
+                self?.handleError(error as NSError)
             }
-           
         }
     }
     
