@@ -50,4 +50,10 @@ class ProductCellTableViewCell: UITableViewCell {
         }
     }
     
+    func getImage(availability: Bool) -> UIImage? {
+        if availability {
+            return leftImageView.image
+        }
+        return rightImageView.image
+    }
 }

@@ -33,6 +33,7 @@ struct Product: Codable {
     let rating: Double?
     let price: Price?
     let isFav: Bool?
+    
 
     enum CodingKeys: String, CodingKey {
         case name, type, id, color, imageURL, colorCode, available, releaseDate, isFav
